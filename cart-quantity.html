@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</style>
+<body>
+    <h1>Cart Quantity Project</h1>
+    <button onclick="console.log(`Cart Quantity : ${cartQuantity}`);">Show Quantity</button>
+    <button onclick="cartQuantity ++; 
+     console.log(`Cart Quantity : ${cartQuantity}`);">Add to Quantity</button>
+
+    <button onclick="cartQuantity += 2;
+    console.log(`Cart Quantity : ${cartQuantity}`);
+    ">+2</button>
+
+    <button onclick="cartQuantity +=  3;
+    console.log(`Cart Quantity : ${cartQuantity}`);
+    ">+3</button>
+
+<button onclick="cartQuantity +=  4;
+    console.log(`Cart Quantity : ${cartQuantity}`);
+    ">+4</button>
+
+    <button onclick="cartQuantity +=  5;
+    console.log(`Cart Quantity : ${cartQuantity}`);
+    ">+5</button>
+
+<button onclick="cartQuantity -=  3;
+    console.log(`Cart Quantity : ${cartQuantity}`);
+    ">-3</button>
+
+<button onclick="cartQuantity -=  2;
+    console.log(`Cart Quantity : ${cartQuantity}`);
+    ">-2</button>
+
+    <button onclick="cartQuantity -=  1;
+    console.log(`Cart Quantity : ${cartQuantity}`);
+    ">Remove Cart</button>
+
+    <button onclick="cartQuantity = 0;
+    console.log('Cart was Reset');
+    console.log('cartQuantity : 0');
+    ">Reset Cart</button>
+
+    <button onclick="cartQuantity = 0;
+    console.log('Cart was Reset');
+    console.log('cartQuantity : 0');
+    ">Reset Cart</button>
+
+    <button onclick="name = 'Alanios    '; console.log(`My name is ${name}`); "
+        title="...message to be displayed in the console">Display Name</button>
+
+
+
+
+
+    <h1>Coffee Shop Quantity Order</h1>
+
+
+
+    <button  title="$5" onclick="cost += 5 ;  console.log(`Cost of food: $${cost}, Tax: $${cost*0.1}, Total Cost: $${cost + (cost*0.1)}`);">Coffee </button>
+    <button  title="$3" onclick="cost += 3 ;  console.log(`Cost of food: $ ${cost}, Tax: $${cost*0.1}, Total Cost: $${cost + (cost*0.1)}`);">Bagels </button>
+    <button title="$9" onclick="cost += 9 ;  console.log(`Cost of food: $ ${cost}, Tax: $${cost*0.1}, Total Cost: $${cost + (cost*0.1)}`);">Soup  </button>
+
+
+    <script>
+        // let name = 0;
+let cost = 0;
+        let cartQuantity = 0;
+
+
+
+
+    </script>
+</body>
+
+</html>

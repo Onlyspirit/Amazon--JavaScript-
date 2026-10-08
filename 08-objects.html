@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+
+
+
+    <!-- An Object groups multiple values together -->
+    <!-- Objects let us group multiple values together 
+    Objects let us use multiple values together
+-->
+
+    <script>
+        /*const product = {
+            name : 'Sucks', 
+            price : 1090 
+        }
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+        
+        
+        product.name = 'cotton socks';
+        console.log(product.name);
+        
+        product.newProperty = true
+        console.log(product);
+        
+        delete product.newProperty 
+        console.log(product);*/
+
+
+       /* const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '1day',
+            'rating': {
+                stars: 4.5,
+                count: 87
+            }, //This is called nested Objects(An Object in an Object. )
+            fun: function function1() {
+                console.log('function inside an Object');
+            }       //This is called a Method. A Method is a function saved inside an object. 
+            //Functions can also be done in an Object. And 
+        }
+
+        console.log(product2);
+        // DOT NOTATION
+        console.log(product2.name);
+        // BRACKET NOTATION let us use propeties that normally don't work with dot notation
+        // and also between the bracket, we don't have to use a string , we can use a variable, a calculation or anything that results in a value.
+        // inside an object, we can save any kind of value.
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);
+        console.log(product2.rating.stars);
+        product2.fun()
+
+
+        console.log(JSON.stringify(product2));*/
+
+
+        // Built-In Objects are objects that are provided by the language. 
+        // 1. JSON - Javascript Object Notation. It is basically a syntax, similar to Javascript Object but with less feautures. 
+        // Difference between JSON and 'Normal' javaScript code: 1. It does not support Single Quote. It uses dobule Quote ("...") insted of the single quote ('...') that the normal Javascript Object.  2. JSON does not support functions.
+        // One of the major reasons why we use JSON instead of a Javascript object syntax is that a Javascript object only makes sense in javaScript, but JSON syntax can be understood by almost all programming language, We can use it to send data between computers, we also use it when we store data. 
+        // The JSON object helps us conert Javascript obejct to JSON. To do that, we use JSON.stringify(..)
+        // To convert JSON to Javascript Object, We use JSON.parse(...).
+
+
+// 1. Obects can hae methods. A method is a function that is stored inside an object.
+        console.log('object'.length);
+        console.log('hello'.toUpperCase());
+        // WHY is it possible to have a method on a string? Because Javascript automatically converts the string to a String object, and then calls the method on that object. Auto Boxing is the process of converting a primitive value to an object.
+        // The String object is a built-in object that has methods and properties that we can use.
+
+
+            // 2. Objects are References.
+            const object1 = { value: 10, appelation: 'Harry', message: 'hi' };
+            const object2 = object1;
+            console.log(object1);
+            console.log(object2);
+
+
+            // Shortcuts for Objects.
+            const message = object2.message;
+            const {messge} = object2
+            // The first line is the long way of getting the message property from object2. The second line is the short way of getting the message property from object2. This is called Destructuring. It is a way of extracting values from objects and arrays.
+            console.log(message);
+            // console.log(appelation);
+            const { value, appelation } = object2;
+    </script>
+</body>
+
+</html>
